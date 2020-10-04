@@ -17,6 +17,14 @@
 1. can use an asynchronous **executor**
 
 * **NOTE** - there's no need to handle errors in this implementation.
+#### HOT TIP 
+ add `.skip` to the end of a test in [test.js](test.js) to skip it in a run, and only test what you want to.
+```javascript
+test.skip("Is not an instance of Promise", () => {
+    const declare = new Declare(()=>{});
+    return expect(declare instanceof Promise).toBe(false);
+  });
+```
 
 ## Recommended prior Knowledge
 - How Promise works?
@@ -30,14 +38,6 @@
 - JS, how does it reads your code?
 [Asynchrony: Under the Hood](https://www.youtube.com/watch?v=SrNQS8J67zc&feature=youtu.be)
 
-#### HOT TIP 
- add `.skip` to the end of a test in [test.js](test.js) to skip it in a run, and only test what you want to.
-```javascript
-test.skip("Is not an instance of Promise", () => {
-    const declare = new Declare(()=>{});
-    return expect(declare instanceof Promise).toBe(false);
-  });
-```
 
 ## HINTS
 [your stuck? click here!](TIPS.md)
