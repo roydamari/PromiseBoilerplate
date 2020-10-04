@@ -12,6 +12,8 @@
 1. can use multiple **then**s chained one after the other
 1. can use an asynchronous **executor**
 
+* **NOTE** - there's no need to handle errors in this implementation.
+
 * **HOT TIP** - add `.skip` to the end of a test to skip it in a run, and only test what you want to.
 ```javascript
 test.skip("Is not an instance of Promise", () => {
