@@ -7,7 +7,20 @@
 - Edit [index.js](index.js) to implement the Declare class. 
 - run `npm run test` in the terminal to run the tests.
 
-### requirements from the Declare class
+## Recommended prior Knowledge
+- How Promise works?
+[Promise MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+[Promises - why!?   Callback-Hell VS Promises](https://medium.com/better-programming/callbacks-vs-promises-in-javascript-1f074e93a3b5)
+
+- JS classes + constructor: 
+[class guide](https://javascript.info/class)
+[class MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor)
+
+- JS, how does it reads your code?
+[Asynchrony: Under the Hood](https://www.youtube.com/watch?v=SrNQS8J67zc&feature=youtu.be)
+
+
+### Requirements from the Declare class
 1. is not implemented using the built-in Promise Class.
 1. can create an instance with an **executor** function using the **new** keyword
 1. has a **then** method, which returns a **Declare** instance
@@ -24,3 +37,6 @@ test.skip("Is not an instance of Promise", () => {
     return expect(declare instanceof Promise).toBe(false);
   });
 ```
+
+## HINTS
+[your stuck? click here!](TIPS.md)
